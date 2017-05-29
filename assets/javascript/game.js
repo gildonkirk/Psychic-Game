@@ -7,14 +7,16 @@ var compLetter = computerChoices[Math.floor(Math.random() * computerChoices.leng
 
 document.onkeyup = function(event) {
 	var userLetter = event.key;
-	console.log(userLetter);
+
+	// so I can see what letter the computer chose
 	console.log(compLetter);
+
 	if(userLetter === compLetter) {
 		winCounter++;
 		compLetter = computerChoices[Math.floor(Math.random() * computerChoices.length)];
 	} else {
 		guessCounter--;
-		document.getElementById("guessKey").innerhtml = (userLetter + ", ");
+		document.getElementById("guessKey").innerHTML = (userLetter + ", ");
 	}
 
 	if(guessCounter < 1) {
@@ -24,13 +26,13 @@ document.onkeyup = function(event) {
 	}
 }
 
- // var winsText = document.getElementById('winCounter')
- // winsText.textContent = winCounter
- // var lossesText = document.getElementById('lossCounter')
- // lossesText.textContent = lossCounter
- // var guessText = document.getElementById('guessCounter')
- // guessText.textContent = guessCounter
+ var winsText = document.getElementById('winCounter');
+ winsText.textContent = winCounter;
+ var lossesText = document.getElementById('lossCounter');
+ lossesText.textContent = lossCounter;
+ var guessText = document.getElementById('guessCounter');
+ guessText.textContent = guessCounter;
 
-document.getElementById("winCounter").innerHTML = winCounter;
-document.getElementById("lossCounter").innerHTML = lossCounter;
-document.getElementById("guessCounter").innerHTML = guessCounter;
+// document.getElementById("winCounter").innerHTML = winCounter;
+// document.getElementById("lossCounter").innerHTML = lossCounter;
+// document.getElementById("guessCounter").innerHTML = guessCounter;
