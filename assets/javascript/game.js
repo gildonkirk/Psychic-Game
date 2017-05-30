@@ -14,24 +14,29 @@ document.onkeyup = function(event) {
 	if(userLetter === compLetter) {
 		winCounter++;
 		compLetter = computerChoices[Math.floor(Math.random() * computerChoices.length)];
+		guessCounter = 9;
+		document.getElementById("guessKey").innerHTML = "";
 	} else {
 		guessCounter--;
-		document.getElementById("guessKey").innerHTML = (userLetter + ", ");
+		document.getElementById("guessKey").innerHTML += (userLetter + ", ");
 	}
 
 	if(guessCounter < 1) {
 	lossCounter++;
 	guessCounter = 9;
 	document.getElementById("guessKey").innerHTML = "";
+	compLetter = computerChoices[Math.floor(Math.random() * computerChoices.length)];
 	}
+
+	var winsText = document.getElementById('winCounter');
+ 	winsText.textContent = winCounter;
+	var lossesText = document.getElementById('lossCounter');
+	lossesText.textContent = lossCounter;
+	var guessText = document.getElementById('guessCounter');
+	guessText.textContent = guessCounter;
 }
 
- var winsText = document.getElementById('winCounter');
- winsText.textContent = winCounter;
- var lossesText = document.getElementById('lossCounter');
- lossesText.textContent = lossCounter;
- var guessText = document.getElementById('guessCounter');
- guessText.textContent = guessCounter;
+ 
 
 // document.getElementById("winCounter").innerHTML = winCounter;
 // document.getElementById("lossCounter").innerHTML = lossCounter;
