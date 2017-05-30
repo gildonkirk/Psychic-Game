@@ -18,30 +18,9 @@ body {
 }
 
 h1 {
-	position: absolute;
-    bottom: 69px;
-    left: 281px;
-    background-color: #abff30;
-    color: #222222;
-    padding: .5em 4em;
-    max-width: 100%;
-}
-
-@media only screen and (max-width: 1200px) {
-	h1 {
-		padding: .5em 3em;
-		bottom: 52px;
-		left: 206px;
-	}
-}
-
-@media only screen and (max-width: 992px) {
-	h1 {
-		font-size: 22pt;
-		padding: .4em 3em;
-		bottom: 42px;
-		left: 144px;
-	}
+	margin: 0;
+	padding: 6px 0;
+	border: 5px solid #9a35b2;
 }
 
 img {
@@ -71,4 +50,28 @@ img {
 .scoreboard {
 	padding-left: 50px;
 	margin: 10px 0;
+}
+
+@media only screen and (max-width: 600px) {
+	h1 {
+		font-size: 22pt;
+	}
+	#guess {
+		font-size: 16pt;
+	}
+	.scoreText {
+		font-size: 15pt;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	h1 {
+		font-size: 22pt;
+	}
+	#guess {
+		font-size: 20pt;
+	}
+	.scoreText {
+		font-size: 16pt;
+	}
 }
