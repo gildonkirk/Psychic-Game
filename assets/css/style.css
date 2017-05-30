@@ -28,7 +28,7 @@ img {
 }
 
 .content {
-	padding: 10px 40px 10px 40px;
+	padding: 20px 20px 16px 20px;
 	border: 10px solid #ABFF30;
 	background-color: #471852;
 	color: #ffffff;
@@ -38,8 +38,8 @@ img {
 
 #guess {
 	text-align: center;
-	font-size: 20pt;
-	margin-bottom: 15px;
+	font-size: 22pt;
+	margin-bottom: 8px;
 	background-color: #ABFF30;
 	color: #222222
 }
@@ -49,25 +49,28 @@ img {
 
 .scoreboard {
 	padding-left: 50px;
-	margin: 10px 0;
+	margin: 0 0 6px 0;
+	border: 5px solid #abff30;
+	padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 @media only screen and (max-width: 635px) {
+	#guess {
+		font-size: 22pt;
+	}
+}
+
+@media only screen and (max-width: 625px) {
+	h1 {
+		font-size: 22pt;
+	}
 	#guess {
 		font-size: 18pt;
 	}
 }
 
-@media only screen and (max-width: 587px) {
-	h1 {
-		font-size: 22pt;
-	}
-	#guess {
-		font-size: 22pt;
-	}
-}
-
-@media only screen and (max-width: 580px) {
+@media only screen and (max-width: 547px) {
 	h1 {
 		font-size: 22pt;
 	}
