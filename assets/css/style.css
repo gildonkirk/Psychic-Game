@@ -33,7 +33,7 @@ img {
 	background-color: #471852;
 	color: #ffffff;
 	font-size: 18pt;
-	font-family: 'Philosopher', sans-serif;
+	font-family: 'Coustard', serif;
 }
 
 #guess {
@@ -52,24 +52,27 @@ img {
 	margin: 10px 0;
 }
 
-@media only screen and (max-width: 600px) {
-	h1 {
-		font-size: 22pt;
-	}
+@media only screen and (max-width: 635px) {
 	#guess {
-		font-size: 16pt;
-	}
-	.scoreText {
-		font-size: 15pt;
+		font-size: 18pt;
 	}
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 587px) {
 	h1 {
 		font-size: 22pt;
 	}
 	#guess {
-		font-size: 20pt;
+		font-size: 22pt;
+	}
+}
+
+@media only screen and (max-width: 580px) {
+	h1 {
+		font-size: 22pt;
+	}
+	#guess {
+		font-size: 22pt;
 	}
 	.scoreText {
 		font-size: 16pt;
